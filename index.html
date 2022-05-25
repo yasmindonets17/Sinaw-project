@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./scss/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
       <div class="container">
       <div class="header__menu-wrap">
          <div class="header__left">
-            <img src="./img/logo.png" alt="Sinaw">
+            <a href=""><img src="./img/logo.png" alt="Sinaw"></a>
             <nav class="header__nav nav">
                <ul class="nav__list">
                   <li class="nav__item">
@@ -42,10 +43,14 @@
             <div class="header__lang">
                <ul>
                   <li><a href="#" class="eng">Eng</a></li>
-                  <li><a href="#"><img src=".//img/icon.png" class="globe" alt="Globe"></a></li>
+                  <li>
+                     <a href="#">
+                        <img src=".//img/icon.png" class="globe" alt="Globe">
+                     </a>
+                  </li>
                </ul>
             </div>
-            <button class="login"><a href="#">Login</a></button>
+            <a href="#" class="login">Login</a>
          </div>
       </div>
          <div class="header__info">
@@ -63,6 +68,7 @@
                   <div class="header-search">
                      <label for="site-search">
                      <input type="search" id="site-search" name="search" placeholder="What do you want to learn...">
+                     <a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
                      </label>
                   </div>
                   <div class="search-suggestions">
@@ -188,7 +194,7 @@
                </div>
             </div>
          </div>
-            <a href="#" class="btn">Show All Classes</a>
+            <a href="#" class="btn btn-all">Show All Classes</a>
       </div>
    </section>
    <section class="webinar">
@@ -198,9 +204,16 @@
             You can stream Webinar live on our apps. Stay update on our Webinar, it’s Free!
          </p>
          <div class="videos">
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5sffVBeaOeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+            <div class="slider">
+               <div class="slider__item">
+                  <iframe width="330" height="200" src="https://www.youtube.com/embed/5sffVBeaOeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="slider__item"><iframe width="330" height="200" src="https://www.youtube.com/embed/WtoK7BzaIsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+               <div class="slider__item"><iframe width="330" height="200" src="https://www.youtube.com/embed/Wu9HY1pxlMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script src="js/script.js"></script>
          </div>
          <a href="#" class="webinar__link">See more webinar videos</a>
       </div>
@@ -294,8 +307,8 @@
                <h2>Get Our Apps, Now!</h2>
                <p>Reach out our apps everywhere and everytime with Sinauw Mobile Application.</p>
                <div class="app-get">
-                  <img src="./img/goodle-play.png" alt="Goodle" class="google">
-                  <img src="./img/apple-store.png" alt="Apple" class="apple">
+                  <a href="#"><img src="./img/goodle-play.png" alt="Goodle" class="google"></a>
+                  <a href="#"><img src="./img/apple-store.png" alt="Apple" class="apple"></a>
                </div>
             </div>
             <div class="app-photo">
@@ -308,15 +321,15 @@
       <div class="container">
          <div class="footer-top">
             <div class="footer__social">
-               <img src="./img/logo.png" alt="Sinaw" class="logo">
+               <a href="#"><img src="./img/logo.png" alt="Sinaw" class="logo"></a>
                <div class="social__text">
                   Any feedback or questions?Contact us on our social media
                </div>
                <div class="social__items">
                   <ul>
-                     <li class="social__item"><a href="#"> <img src="img/facebook(1) 1.png" alt="fb"></a></li>
-                     <li class="social__item"><a href="#"><img src="img/twitter(2) 2.png" alt="tw"></a></li>
-                     <li class="social__item"><a href="#"><img src="img/instagram 2.png" alt="insta"></a></li>
+                     <li class="social__item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li class="social__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li class="social__item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                   </ul>
                </div>
             </div>
